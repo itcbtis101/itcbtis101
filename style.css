@@ -45,6 +45,36 @@ header {
   z-index: 2;
   color: white;
 }
+.contenido-header {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  gap: 1rem; /* espacio entre logo y texto */
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 80px; /* ajusta según tamaño del logo */
+  height: auto;
+}
+
+.titulo h1, .titulo h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+  .contenido-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 60px;
+  }
+}
+
+
+
 .footer {
   background-color: #333; /* Color de fondo oscuro */
   color: #fff;            /* Texto blanco */
