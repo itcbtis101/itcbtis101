@@ -53,8 +53,9 @@ header {
 }
 
 .logo {
-  width: 120px; /* o el tamaño que necesites */
-  height: auto; /* mantiene la proporción original */
+  width: 10vw; /* 10% del ancho de la ventana */
+  max-width: 200px;
+  height: auto;
 }
 
 .titulo h1, .titulo h3 {
