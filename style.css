@@ -48,7 +48,7 @@ header {
 .contenido-header {
   display: flex;
   align-items: center; /* centra verticalmente */
-  gap: 2rem; /* espacio entre logo y texto */
+  gap: 1rem; /* espacio entre logo y texto */
   padding: 10px 20px;
 }
 
@@ -69,7 +69,7 @@ header {
   }
 
   .logo {
-    width: 75px;
+    width: 90px;
   }
 }
 
