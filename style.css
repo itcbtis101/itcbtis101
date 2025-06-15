@@ -14,7 +14,7 @@ header {
 }
 
 header {
-  background-image: url('bg.jpg'); /* Ajusta la ruta si es necesario */
+  background-image: url('bg.JPG'); /* Ajusta la ruta si es necesario */
   background-size: cover;
   background-position: center;
   height: 200px; /* Ajusta la altura según tu diseño */
