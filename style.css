@@ -118,33 +118,3 @@ iframe {
     text-align: center;
     background: #004080;
   }
-}
-.info-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-.card {
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-}
-.card-img {
-  width: auto-fit;
-  height: auto;
-  display: block;
-}
-.card h3 {
-  color: #003366;
-  margin: 1rem;
-}
-.card p {
-  color: #444;
-  margin: 0 1rem 1rem;
-}
