@@ -47,18 +47,19 @@ header {
 }
 .contenido-header {
   display: flex;
-  align-items: center; /* centra verticalmente */
-  gap: 1rem; /* espacio entre logo y texto */
+  align-items: center;
+  gap: 1rem;
   padding: 10px 20px;
+  flex-wrap: wrap; /* Para que se acomode bien en pantallas pequeñas */
 }
 
 .logo {
-  width: 10vw; /* 10% del ancho de la ventana */
-  max-width: 200px;
-  height: auto;
+  width: 120px;       /* Tamaño base del logo */
+  max-width: 100%;    /* Nunca se pasa de su contenedor */
+  height: auto;       /* Mantiene proporción */
 }
 
-.titulo h1, .titulo h3 {
+.titulo h1, .titulo h2 {
   margin: 0;
   line-height: 1.2;
 }
@@ -70,10 +71,10 @@ header {
   }
 
   .logo {
-    width: 90px;
+    width: 80px; /* Ajusta tamaño del logo en celulares */
+    margin-bottom: 10px;
   }
 }
-
 
 
 
