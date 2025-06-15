@@ -53,8 +53,8 @@ header {
 }
 
 .logo {
-  width: 90px; /* ajusta según tamaño del logo */
-  height: auto;
+  width: 120px; /* o el tamaño que necesites */
+  height: auto; /* mantiene la proporción original */
 }
 
 .titulo h1, .titulo h3 {
