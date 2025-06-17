@@ -6,39 +6,55 @@ body {
   color: #333;
 }
 
+/* Estilo del header con imagen de fondo */
 header {
-  background: #003366;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-header {
-  background-image: url('../imagenes/bg.jpg'); /* Ajusta la ruta si es necesario */
+  background-image: url('BG.jpg'); /* Cambia esto por tu imagen */
   background-size: cover;
   background-position: center;
-  height: 200px; /* Ajusta la altura según tu diseño */
-  text-align: center;
-  color: white;
+  background-repeat: no-repeat;
   padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Mejora la legibilidad del texto */
+  color: white;
+  text-align: center;
+  position: relative;
 }
 
-.header::before {
+/* Fondo oscuro translúcido si el texto no resalta bien */
+header::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Ajusta el oscurecido */
   z-index: 1;
 }
 
+/* Asegura que el contenido quede por encima del fondo oscuro */
+.contenido-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Imagen del logo */
+.logo {
+  max-width: 120px;
+  height: auto;
+}
+
+/* Títulos centrados verticalmente */
+.titulos {
+  text-align: left;
+  max-width: 600px;
+}
+
+.titulos h1, .titulos h2 {
+  margin: 0;
+  padding: 5px 0;
+}
 .header h1,
 .header p {
   position: relative;
