@@ -8,7 +8,7 @@ body {
 
 /* Estilo del header con imagen de fondo */
 header {
-  background-image: url('BG.jpg'); /* Cambia esto por tu imagen */
+  background-image: url('bg.JPG'); /* Cambia esto por tu imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
