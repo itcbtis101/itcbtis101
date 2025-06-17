@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CBTIS 101</title>
-  <script defer src="script.js"></script>
   <style>
     body {
       margin: 0;
@@ -13,9 +12,9 @@
       color: #333;
     }
 
-    /* Estilo del header con imagen de fondo */
+    /* Header */
     header {
-      background-image: url('bg.jpg');
+      background-image: url('bg.jpg'); /* Asegúrate de que esta imagen esté en la misma carpeta */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -60,8 +59,24 @@
       color: white;
     }
 
+    /* Navbar */
     .navbar {
       background: #004080;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0 1rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
     }
 
     .menu {
@@ -96,18 +111,45 @@
       background: #0059b3;
       flex-direction: column;
       min-width: 200px;
+      z-index: 999;
     }
 
     .menu li:hover .submenu {
       display: flex;
     }
 
-    .menu-toggle {
-      display: none;
-      padding: 1rem;
-      color: white;
-      font-size: 1.5rem;
-      cursor: pointer;
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #004080;
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .menu li {
+        width: 100%;
+        text-align: center;
+      }
+
+      .submenu {
+        position: static;
+        background-color: #0059b3;
+        display: none;
+        flex-direction: column;
+      }
+
+      .menu li:hover .submenu {
+        display: flex;
+      }
     }
 
     main {
@@ -119,21 +161,6 @@
       height: 300px;
       border: none;
       margin-top: 1rem;
-    }
-
-    @media (max-width: 768px) {
-      .menu {
-        display: none;
-        flex-direction: column;
-      }
-      .menu.active {
-        display: flex;
-      }
-      .menu-toggle {
-        display: block;
-        text-align: center;
-        background: #004080;
-      }
     }
 
     .footer {
@@ -158,21 +185,23 @@
   </header>
 
   <nav class="navbar">
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <ul class="menu" id="menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="actividades.html">Actividades de la Institución</a></li>
-      <li class="dropdown">
-        <a href="#">Carreras</a>
-        <ul class="submenu">
-          <li><a href="contabilidad.html">Contabilidad</a></li>
-          <li><a href="laboratorio.html">Laboratorio Clínico</a></li>
-          <li><a href="mecanica.html">Mecánica Industrial</a></li>
-          <li><a href="alimentos.html">Producción Industrial de Alimentos</a></li>
-        </ul>
-      </li>
-      <li><a href="creadores.html">Creadores</a></li>
-    </ul>
+    <div class="navbar-container">
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="actividades.html">Actividades de la Institución</a></li>
+        <li class="dropdown">
+          <a href="#">Carreras</a>
+          <ul class="submenu">
+            <li><a href="contabilidad.html">Contabilidad</a></li>
+            <li><a href="laboratorio.html">Laboratorio Clínico</a></li>
+            <li><a href="mecanica.html">Mecánica Industrial</a></li>
+            <li><a href="alimentos.html">Producción Industrial de Alimentos</a></li>
+          </ul>
+        </li>
+        <li><a href="creadores.html">Creadores</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main>
