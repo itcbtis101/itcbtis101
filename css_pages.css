@@ -99,3 +99,33 @@
   color: #444;
   margin: 0 1rem 1rem;
 }
+.caja-creadores {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #f1f7ff;
+  border: 2px solid #3366cc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.caja-creadores h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.caja-creadores ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.caja-creadores li {
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #ffffff;
+  border-left: 5px solid #3366cc;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+}
