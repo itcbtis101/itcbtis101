@@ -14,7 +14,7 @@ header {
 }
 
 header {
-  background-image: url('../itcbtis101/bg.JPG'); /* Ajusta la ruta si es necesario */
+  background-image: url('../imagenes/bg.jpg'); /* Ajusta la ruta si es necesario */
   background-size: cover;
   background-position: center;
   height: 200px; /* Ajusta la altura según tu diseño */
@@ -44,56 +44,6 @@ header {
   position: relative;
   z-index: 2;
   color: white;
-}
-.contenido-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 10px 20px;
-  flex-wrap: wrap; /* Para que se acomode bien en pantallas pequeñas */
-}
-
-.logo {
-  width: 140px;       /* Tamaño base del logo */
-  max-width: 100%;    /* Nunca se pasa de su contenedor */
-  height: auto;       /* Mantiene proporción */
-}
-
-.titulo h1, .titulo h2 {
-  margin: 0;
-  line-height: 1.2;
-}
-
-@media (max-width: 600px) {
-  .contenido-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .logo {
-    width: 80px; /* Ajusta tamaño del logo en celulares */
-    margin-bottom: 10px;
-  }
-.facebook-responsive {
-  max-width: 100%;
-  margin: 20px auto;
-  padding: 0 15px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.facebook-responsive .fb-page {
-  width: 100% !important;
-}
-
-@media (max-width: 600px) {
-  .facebook-responsive {
-    padding: 0 10px;
-  }
-
-  .facebook-responsive .fb-page {
-    height: 400px !important; /* Puedes ajustar este valor */
-  }
 }
 .footer {
   background-color: #333; /* Color de fondo oscuro */
@@ -168,7 +118,38 @@ iframe {
     text-align: center;
     background: #004080;
   }
-  .caja-creadores {
+}
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-img {
+  width: auto-fit;
+  height: auto;
+  display: block;
+}
+.card h3 {
+  color: #003366;
+  margin: 1rem;
+}
+.card p {
+  color: #444;
+  margin: 0 1rem 1rem;
+}
+
+.caja-creadores {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px 30px;
