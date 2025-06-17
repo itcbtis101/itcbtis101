@@ -74,14 +74,27 @@ header {
     width: 80px; /* Ajusta tamaño del logo en celulares */
     margin-bottom: 10px;
   }
-}
 .facebook-responsive {
   max-width: 100%;
   margin: 20px auto;
   padding: 0 15px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
+.facebook-responsive .fb-page {
+  width: 100% !important;
+}
+
+@media (max-width: 600px) {
+  .facebook-responsive {
+    padding: 0 10px;
+  }
+
+  .facebook-responsive .fb-page {
+    height: 400px !important; /* Puedes ajustar este valor */
+  }
+}
 .footer {
   background-color: #333; /* Color de fondo oscuro */
   color: #fff;            /* Texto blanco */
